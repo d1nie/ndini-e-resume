@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style/stylee.css" />
+    <link rel="stylesheet" href="style/lightbox.min.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nur Dini</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nur Dini</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/dinie1.png" alt="Dini profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nur Dini</h1>
+        <p class="section__text__p2">A Information Content <br> Management Graduate Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/dini-resume.pdf')"
+            
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='https://drive.google.com/file/d/1q0c_HNyVvuJ5y8vXm5zubQnMDExkhP_L/view?usp=sharing'"
+            
+          >
+            Biodata Video
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/instagramm.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://instagram.com/dniedcntrllycre'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/diniaboutme.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/skills.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <h3>Skills</h3>
+              <p>Technical Skills <br />Soft Skills</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/skills.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>SPM
+                <br />STPM<br>Bachelor Of Information Content Management</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! I'm Nurdini binti Hasmadi, an aspiring Bachelor of Information Content Management professional fueled by curiosity
+              and a passion for innovation. With a love for technology and a knack for problem-solving, I'm on a mission to make a positive impact. I bring together technical expertise and a creative mindset to 
+              create meaningful solutions that shape the future. Join me as we explore new possibilities and create a better tomorrow.
+            </p>
+          </div>
+          <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#education'"
+        />
+        </section>    
+       </div>
+      </section>
+      <section id="education">
+        <h1 class="title">Education</h1>
+        <div class="education-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="-sub-title"></h2>
+              <div class="article-container">
+                <article>
+                    <img
+                      src="./assets/school.png"
+                      alt="School icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h4>SPM</h4>
+                      <h3>Smk Toh Indera Wangsa Ahmad</h3>
+                      <p>2019</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <img
+                      src="./assets/school.png"
+                      alt="School icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h4>STPM</h4>
+                      <h3>Smk Sultan Yussuf</h3>
+                      <p>2021</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <img
+                      src="./assets/school.png"
+                      alt="School icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h4>Degree In Information Content Management</h4>
+                      <h3>Uitm Puncak Perdana</h3>
+                      <p>2026</p>
+                    </div>
+                  </article>
+            </div>
+            <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#skills'"
+          />
+          </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title"></h2>
+            <div class="article-container">
+              <article>
+              
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MS Office</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Drive</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>German Language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Writing and Editing</h3>
+                  <p>Expert</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=""
+                  alt=""
+                  class=""
+                />
+                <div>
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title"></h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem-Solving Skills</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adaptability and Learning Agility</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Collaboration and Teamwork</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src=""
+                  alt=""
+                  class=""
+                />
+                <div>
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+      />
+    </section>
+  
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+    <center>
+      <div>
+        <center>
+          <div class="gallery">
+            <a href="assets/projectone.jpg" data-lightbox="mygallery" data-title="Part-Time Work Experience At Nihon Canpack Batu
+            Gajah"><img src="assets/projectone.jpg"></a>
+            <a href="assets/projecttwo.jpg"data-lightbox="mygallery" data-title="Artistic Skills in School"><img src="assets/projecttwo.jpg"></a>
+            <a href="assets/projectthree.jpg"data-lightbox="mygallery" data-title="Part-Time Work Experience At Tanjung Tualang Tin Dredge"><img src="assets/projectthree.jpg"></a>
+          </center>
+            </div>
+
+            
+      <div class="projects-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src=""
+                alt=""
+                class=""
+              />
+            </div>
+
+            <br>
+            <h5>2023</h5>
+            <h4 class="project-sub-title project-title">Part-Time Work Experience At Nihon Canpack Batu Gajah</h4>
+            <h5>➮ Material Handling : Receive, unload, and inspect incoming shipments of goodsand materials. Verify the accuracy of deliveries and ensure 
+              they are properlystored in designated areas. Prepare outgoing shipments and packages, ensuringthey are properly labeled and documented. <br>
+              ➮ Order Fulfillment : Collaborate with the warehouse team to pick and packcustomer orders accurately and efficiently. 
+              Use appropriate packaging materialsand methods to ensure the safe transportation of goods. Prepare items forshipment 
+              and arrange for their timely delivery.</h5>
+            <div class="">
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+           <br>
+            <h5>2020-2021</h5>
+            <h4 class="project-sub-title project-title">Artistic Skills : Drawing & Painting</h4>
+            <br>
+            <h5>➮ Independent Art Projects: Developed a portfolio of artwork that showcases my
+              individual style, creativity, and growth as an artist.
+              ➮ Showed self-motivation and discipline by managing my time effectively to
+              complete projects and meet personal artistic goals.</h5>
+            <div class="">
+
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src=""
+                alt=""
+                class=""
+                
+              />
+            </div>
+            <br>
+            <h5>2020</h5>
+            <h4 class="project-sub-title project-title">Part-Time Work Experience At Tanjung Tualang Tin Dredge</h4>
+            <h5>➮ Customer Service : Serve as a point of contact for event attendees, addressingtheir inquiries, providing directions, and offering assistance 
+              throughout the event. Maintain a friendly and professional demeanor while ensuring a positiveexperience for all participants. <br>
+              ➮ Post-Event Cleanup : Help with post-event cleanup activities, including dismantling equipment, removing decorations, and restoring the event 
+              venue toits original condition. Ensure proper storage of event materials and equipment forfuture use.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <section id="contact">
+      <h6 class="section__text__p1">Get in Touch</h6>
+      <center><h4 class=>Contact Me</h4></center>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">dinieailyssa@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagramm.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/dniedcntrllycre">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+<br>
+<br>
+<br>
+      <p>Copyright &#169; 2023 Nur Dini. All Rights Reserved.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }
+    </script>
+  </body>
+</html>
